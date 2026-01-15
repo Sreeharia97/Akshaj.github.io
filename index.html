@@ -3,137 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshaj Biju | Marine Service Engineer</title>
+    <title>Akshaj Biju | Marine Engineering Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            --off-white: #FAF9F6;
+            --amber-highlight: #FEF3C7;
+            --marine-dark: #0f172a;
+        }
         body { 
-            background-color: #FAF9F6; 
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            color: #1C1C1C;
+            background-color: var(--off-white); 
+            font-family: 'Roboto Mono', monospace;
+            color: var(--marine-dark);
         }
-        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .technical-heading { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
         .amber-block { 
-            background-color: #FEF3C7; 
-            border-radius: 24px;
-            transition: all 0.3s ease;
+            background-color: var(--amber-highlight); 
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 4px; /* More industrial, less rounded */
         }
-        .amber-block:hover {
-            background-color: #FDE68A;
-            transform: translateY(-2px);
-        }
+        .sidebar-item { border-left: 3px solid #d1d5db; padding-left: 1rem; }
+        .sidebar-item:hover { border-left-color: #f59e0b; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="p-4 md:p-12">
 
-    <div class="max-w-5xl mx-auto space-y-6">
-        
-        <header class="grid md:grid-cols-3 gap-6">
-            <div class="md:col-span-2 amber-block p-10 flex flex-col justify-between">
-                <div>
-                    <h1 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter">Akshaj Biju</h1>
-                    <p class="mt-4 text-xl font-semibold opacity-70 uppercase tracking-widest">Marine Service Engineer</p>
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-baseline border-b-2 border-slate-900 pb-4 mb-12">
+            <h1 class="technical-heading text-4xl font-bold tracking-tighter">Akshaj Biju</h1>
+            <p class="text-xs font-bold uppercase tracking-widest hidden md:block">Marine Service Engineer // Mechanical Specialist</p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-4 space-y-8">
+                <div class="amber-block p-8">
+                    <h2 class="technical-heading text-xl mb-4 border-b border-black/10 pb-2">Identification</h2>
+                    <div class="space-y-3 text-sm">
+                        <p><strong>DOB:</strong> 25/06/01 [cite: 8]</p>
+                        <p><strong>Nationality:</strong> Indian [cite: 8]</p>
+                        <p><strong>Location:</strong> Ernakulam, Kerala [cite: 4]</p>
+                        <p><strong>Passport:</strong> T68****7 [cite: 8]</p>
+                    </div>
                 </div>
-                <p class="mt-12 text-lg leading-relaxed max-w-xl">
-                    Mechanical Marine Service Engineer specializing in maintenance, repair, and servicing of marine machinery and mechanical systems[cite: 13, 14]. 
-                </p>
-            </div>
-            <div class="bg-zinc-900 text-white p-10 rounded-[24px] flex flex-col justify-between">
-                <div class="space-y-4">
-                    <p class="text-xs uppercase tracking-widest opacity-50">Contact Details</p>
-                    <p class="text-sm">akshajbiju2001@gmail.com [cite: 5]</p>
+
+                <div class="sidebar-item">
+                    <h3 class="technical-heading text-sm text-slate-500 mb-2">Contact Channels</h3>
+                    <p class="text-sm font-bold">akshajbiju2001@gmail.com [cite: 5]</p>
                     <p class="text-sm">+91 9946441446 [cite: 1]</p>
-                    <p class="text-sm">Vennikulam | Ernakulam [cite: 4]</p>
+                    <a href="http://linkedin.com/in/Akshaj-biju-464508243" target="_blank" class="text-xs text-blue-600 underline block mt-2">LINKEDIN PROFILE [cite: 3]</a>
                 </div>
-                <a href="http://linkedin.com/in/Akshaj-biju-464508243" target="_blank" class="mt-8 inline-block border border-white/20 text-center py-3 rounded-xl hover:bg-white hover:text-black transition">
-                    LinkedIn <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
-                </a>
-            </div>
-        </header>
 
-        <section class="grid md:grid-cols-3 gap-6">
-            <div class="amber-block p-8">
-                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm">Engine Specialization</h3>
-                <ul class="space-y-3 text-sm font-medium">
-                    <li>• Yanmar 6EY18LW [cite: 27]</li>
-                    <li>• Yanmar 6EY26LW [cite: 27]</li>
-                    <li>• Auxiliary Engine Overhaul [cite: 19, 27]</li>
-                    <li>• Main Engine Correction [cite: 27]</li>
-                </ul>
-            </div>
-            <div class="amber-block p-8">
-                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm">Mechanical Systems</h3>
-                <ul class="space-y-3 text-sm font-medium">
-                    <li>• CPP Shafting [cite: 28]</li>
-                    <li>• Propulsion Systems [cite: 22]</li>
-                    <li>• Fuel Injection Systems [cite: 20]</li>
-                    <li>• Troubleshooting [cite: 22]</li>
-                </ul>
-            </div>
-            <div class="amber-block p-8">
-                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm">Tools & Skills</h3>
-                <ul class="space-y-3 text-sm font-medium">
-                    <li>• CAD & SolidWorks [cite: 22, 48]</li>
-                    <li>• CNC Machining [cite: 40]</li>
-                    <li>• Technical Documentation [cite: 17]</li>
-                    <li>• Site Service Execution [cite: 17]</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="amber-block p-10">
-            <div class="flex flex-col md:flex-row justify-between mb-8">
-                <h2 class="heading-font text-3xl font-bold">Experience Log</h2>
-                <div class="text-right">
-                    <p class="font-bold">Ind-Aust Maritime Pvt. Ltd. [cite: 25]</p>
-                    <p class="text-sm opacity-60 uppercase">10/2023 - Present [cite: 24]</p>
-                </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-4 text-sm leading-relaxed">
-                    <p>• Overhauled and corrected mechanical problems with Yanmar Auxiliary & Main Engines[cite: 27].</p>
-                    <p>• Worked on Controllable Pitch Propeller (CPP) Shafting in passenger/cargo vessels[cite: 28].</p>
-                </div>
-                <div class="space-y-4 text-sm leading-relaxed">
-                    <p>• Performed routine preventive maintenance and machine diagnostics[cite: 31, 32].</p>
-                    <p>• Managed equipment dismantling to restore functionality and minimize downtime[cite: 18, 33].</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="grid md:grid-cols-2 gap-6">
-            <div class="amber-block p-10">
-                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm text-amber-900/50">B.Tech Project</h3>
-                <h4 class="text-2xl font-bold mb-4">Automated Solar Cleaning System [cite: 42]</h4>
-                <p class="text-sm leading-relaxed opacity-80">
-                    Developed a compressed air-based cleaning system to improve solar panel efficiency without water waste or surface scratches[cite: 42, 43].
-                </p>
-            </div>
-            <div class="bg-white border-2 border-amber-100 p-10 rounded-[24px]">
-                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm opacity-40">Education</h3>
-                <div class="space-y-6">
-                    <div>
-                        <p class="font-bold text-lg">B.TECH, Mechanical Engineering [cite: 36]</p>
-                        <p class="text-sm opacity-60 italic">Adi Shankara Institute Of Engineering And Technology [cite: 36]</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-amber-100 px-3 py-1 rounded-full text-[10px] font-bold uppercase">BMW Engine Tuning [cite: 49]</span>
-                        <span class="bg-amber-100 px-3 py-1 rounded-full text-[10px] font-bold uppercase">EV Mfg [cite: 40]</span>
-                        <span class="bg-amber-100 px-3 py-1 rounded-full text-[10px] font-bold uppercase">Quality Mgmt [cite: 40]</span>
+                <div class="sidebar-item">
+                    <h3 class="technical-heading text-sm text-slate-500 mb-2">Languages</h3>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-bold">
+                        <span class="bg-slate-200 px-2 py-1">ENGLISH [cite: 46]</span>
+                        <span class="bg-slate-200 px-2 py-1">HINDI [cite: 46]</span>
+                        <span class="bg-slate-200 px-2 py-1">MALAYALAM [cite: 46]</span>
+                        <span class="bg-slate-200 px-2 py-1">TELUGU [cite: 46]</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <footer class="flex justify-center gap-8 py-8 opacity-30 text-[10px] font-bold uppercase tracking-[0.3em]">
-            <span>English [cite: 46]</span>
-            <span>Hindi [cite: 46]</span>
-            <span>Malayalam [cite: 46]</span>
-            <span>Telugu [cite: 46]</span>
+            <div class="lg:col-span-8 space-y-12">
+                
+                <section>
+                    <h2 class="technical-heading text-2xl mb-6 bg-slate-900 text-white inline-block px-4 py-1">Professional Summary</h2>
+                    <p class="text-lg leading-relaxed border-l-4 border-amber-400 pl-6">
+                        Dedicated and detail-oriented with hands-on experience in maintenance, repair, and servicing of marine machinery and mechanical systems[cite: 14]. Proven ability to work in challenging environments and deliver cost-efficient solutions that improve vessel performance[cite: 18].
+                    </p>
+                </section>
+
+                <section class="amber-block p-10">
+                    <div class="flex justify-between items-start mb-8 border-b border-black/10 pb-4">
+                        <h2 class="technical-heading text-2xl">Service Record</h2>
+                        <span class="text-xs font-bold bg-white px-3 py-1">CURRENTLY ACTIVE [cite: 24]</span>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="font-bold text-xl uppercase">Ind-Aust Maritime Pvt. Ltd. [cite: 25]</h3>
+                        <p class="text-amber-700 text-xs font-bold tracking-widest mb-4">OCT 2023 — CURRENT [cite: 24]</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 text-sm">
+                            <div class="space-y-4">
+                                <p class="flex gap-2"><span>-</span> <strong>Yanmar Propulsion:</strong> Overhauled and corrected mechanical problems with Yanmar Auxiliary & Main Engines (6EY18LW, 6EY26LW).</p>
+                                <p class="flex gap-2"><span>-</span> <strong>Shaft Systems:</strong> Worked on Controllable Pitch Propeller (CPP) Shafting in passenger/cargo vessels.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="flex gap-2"><span>-</span> <strong>Diagnostics:</strong> Visually inspected and tested machinery, performing routine preventive maintenance[cite: 31].</p>
+                                <p class="flex gap-2"><span>-</span> <strong>Repair:</strong> Dismantled defective parts and equipment and installed new or repaired components[cite: 30].</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid md:grid-cols-2 gap-6">
+                    <div class="amber-block p-8">
+                        <h3 class="technical-heading text-sm mb-4">Academic Background</h3>
+                        <p class="font-bold text-sm">B.TECH, Mechanical Engineering [cite: 36]</p>
+                        <p class="text-xs opacity-70 mb-4">Adi Shankara Institute Of Engineering And Technology [cite: 36]</p>
+                        <div class="pt-4 border-t border-black/5">
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-amber-800">Key Project</p>
+                            <p class="text-xs italic mt-1">Automated Solar Panel Cleaning System using compressed air[cite: 42].</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-slate-100 p-8">
+                        <h3 class="technical-heading text-sm mb-4">Technical Training</h3>
+                        <ul class="text-xs space-y-2">
+                            <li>• Electric Vehicle Manufacturing [cite: 40]</li>
+                            <li>• Quality Management [cite: 40]</li>
+                            <li>• BMW Engine Tuning Workshop [cite: 49]</li>
+                            <li>• Solid Works & CNC Machining [cite: 40, 48]</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-slate-200 flex justify-between text-[10px] font-bold opacity-50 uppercase tracking-[0.5em]">
+            <span>Verified Marine Service Record</span>
+            <span>&copy; 2026 Akshaj Biju</span>
         </footer>
-
     </div>
 
 </body>
