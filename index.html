@@ -3,145 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshaj Biju | Marine Engineering</title>
+    <title>Akshaj Biju | Marine Service Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        offwhite: '#FAF9F6',
-                        softamber: '#FEF3C7',
-                        industrial: '#1C1C1C'
-                    },
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        serif: ['Instrument Serif', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
     <style>
-        body { background-color: #FAF9F6; color: #1C1C1C; }
-        .section-border { border-top: 1px solid rgba(28, 28, 28, 0.1); }
-        .amber-accent { background-color: #FEF3C7; }
-        .hover-lift { transition: transform 0.2s ease-out; }
-        .hover-lift:hover { transform: translateY(-4px); }
+        body { 
+            background-color: #FAF9F6; 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #1C1C1C;
+        }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .amber-block { 
+            background-color: #FEF3C7; 
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .amber-block:hover {
+            background-color: #FDE68A;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
-<body class="antialiased">
+<body class="p-4 md:p-8">
 
-    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
-        <span class="font-extrabold tracking-tighter text-xl">A.BIJU</span>
-        <div class="flex gap-8 text-sm font-semibold uppercase tracking-widest">
-            <a href="mailto:akshajbiju2001@gmail.com" class="hover:opacity-50 transition">Contact</a>
-            <a href="http://linkedin.com/in/Akshaj-biju-464508243" target="_blank" class="hover:opacity-50 transition">LinkedIn</a>
-        </div>
-    </nav>
-
-    <header class="max-w-6xl mx-auto px-6 pt-12 pb-24">
-        <div class="grid lg:grid-cols-2 items-end gap-12">
-            <div>
-                <h1 class="font-serif text-7xl lg:text-9xl leading-none">Marine<br>Engineer</h1>
-                <p class="mt-8 text-xl max-w-md leading-relaxed text-slate-700">
-                    Mechanical Marine Service Engineer focused on precision maintenance and industrial efficiency. Currently at Ind-Aust Maritime[cite: 25, 26].
+    <div class="max-w-5xl mx-auto space-y-6">
+        
+        <header class="grid md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 amber-block p-10 flex flex-col justify-between">
+                <div>
+                    <h1 class="heading-font text-5xl md:text-7xl font-bold tracking-tighter">Akshaj Biju</h1>
+                    <p class="mt-4 text-xl font-semibold opacity-70 uppercase tracking-widest">Marine Service Engineer</p>
+                </div>
+                <p class="mt-12 text-lg leading-relaxed max-w-xl">
+                    Mechanical Marine Service Engineer specializing in maintenance, repair, and servicing of marine machinery and mechanical systems[cite: 13, 14]. 
                 </p>
             </div>
-            <div class="flex flex-col items-start lg:items-end">
-                <div class="amber-accent p-8 rounded-2xl inline-block mb-6">
-                    <p class="font-bold text-sm uppercase tracking-widest mb-2">Current Location</p>
-                    <p class="text-lg">Vennikulam | Ernakulam [cite: 4]</p>
+            <div class="bg-zinc-900 text-white p-10 rounded-[24px] flex flex-col justify-between">
+                <div class="space-y-4">
+                    <p class="text-xs uppercase tracking-widest opacity-50">Contact Details</p>
+                    <p class="text-sm">akshajbiju2001@gmail.com [cite: 5]</p>
+                    <p class="text-sm">+91 9946441446 [cite: 1]</p>
+                    <p class="text-sm">Vennikulam | Ernakulam [cite: 4]</p>
+                </div>
+                <a href="http://linkedin.com/in/Akshaj-biju-464508243" target="_blank" class="mt-8 inline-block border border-white/20 text-center py-3 rounded-xl hover:bg-white hover:text-black transition">
+                    LinkedIn <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
+                </a>
+            </div>
+        </header>
+
+        <section class="grid md:grid-cols-3 gap-6">
+            <div class="amber-block p-8">
+                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm">Engine Specialization</h3>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li>• Yanmar 6EY18LW [cite: 27]</li>
+                    <li>• Yanmar 6EY26LW [cite: 27]</li>
+                    <li>• Auxiliary Engine Overhaul [cite: 19, 27]</li>
+                    <li>• Main Engine Correction [cite: 27]</li>
+                </ul>
+            </div>
+            <div class="amber-block p-8">
+                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm">Mechanical Systems</h3>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li>• CPP Shafting [cite: 28]</li>
+                    <li>• Propulsion Systems [cite: 22]</li>
+                    <li>• Fuel Injection Systems [cite: 20]</li>
+                    <li>• Troubleshooting [cite: 22]</li>
+                </ul>
+            </div>
+            <div class="amber-block p-8">
+                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm">Tools & Skills</h3>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li>• CAD & SolidWorks [cite: 22, 48]</li>
+                    <li>• CNC Machining [cite: 40]</li>
+                    <li>• Technical Documentation [cite: 17]</li>
+                    <li>• Site Service Execution [cite: 17]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="amber-block p-10">
+            <div class="flex flex-col md:flex-row justify-between mb-8">
+                <h2 class="heading-font text-3xl font-bold">Experience Log</h2>
+                <div class="text-right">
+                    <p class="font-bold">Ind-Aust Maritime Pvt. Ltd. [cite: 25]</p>
+                    <p class="text-sm opacity-60 uppercase">10/2023 - Present [cite: 24]</p>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <main class="max-w-6xl mx-auto px-6 pb-32 space-y-32">
-
-        <section class="section-border pt-12">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Professional Summary</div>
-                <div class="md:col-span-2 text-2xl font-light leading-snug">
-                    Motivated Mechanical Marine Service Engineer[cite: 13]. Enthusiastic about applying academic knowledge and hands-on skills to innovative maritime projects[cite: 11, 12]. Dedicated to delivering cost-efficient solutions that minimize vessel downtime[cite: 14, 18].
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4 text-sm leading-relaxed">
+                    <p>• Overhauled and corrected mechanical problems with Yanmar Auxiliary & Main Engines[cite: 27].</p>
+                    <p>• Worked on Controllable Pitch Propeller (CPP) Shafting in passenger/cargo vessels[cite: 28].</p>
+                </div>
+                <div class="space-y-4 text-sm leading-relaxed">
+                    <p>• Performed routine preventive maintenance and machine diagnostics[cite: 31, 32].</p>
+                    <p>• Managed equipment dismantling to restore functionality and minimize downtime[cite: 18, 33].</p>
                 </div>
             </div>
         </section>
 
-        <section class="section-border pt-12">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Work Record</div>
-                <div class="md:col-span-2 space-y-16">
+        <section class="grid md:grid-cols-2 gap-6">
+            <div class="amber-block p-10">
+                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm text-amber-900/50">B.Tech Project</h3>
+                <h4 class="text-2xl font-bold mb-4">Automated Solar Cleaning System [cite: 42]</h4>
+                <p class="text-sm leading-relaxed opacity-80">
+                    Developed a compressed air-based cleaning system to improve solar panel efficiency without water waste or surface scratches[cite: 42, 43].
+                </p>
+            </div>
+            <div class="bg-white border-2 border-amber-100 p-10 rounded-[24px]">
+                <h3 class="heading-font font-bold uppercase tracking-wider mb-6 text-sm opacity-40">Education</h3>
+                <div class="space-y-6">
                     <div>
-                        <div class="flex justify-between items-baseline mb-4">
-                            <h3 class="text-3xl font-bold">Ind-Aust Maritime Pvt. Ltd. [cite: 25]</h3>
-                            <span class="font-medium text-slate-500 italic">2023 — Present [cite: 24]</span>
-                        </div>
-                        <p class="text-blue-600 font-bold uppercase text-xs tracking-widest mb-8">Marine Service Engineer [cite: 26]</p>
-                        <ul class="grid md:grid-cols-2 gap-x-12 gap-y-6 text-slate-600">
-                            <li class="pb-4 border-b border-slate-100 italic underline-offset-4">Overhauled Yanmar Auxiliary & Main Engines (6EY18LW, 6EY26LW)[cite: 27].</li>
-                            <li class="pb-4 border-b border-slate-100 italic">Maintained CPP Shafting in passenger and cargo vessels[cite: 28].</li>
-                            <li class="pb-4 border-b border-slate-100 italic">Performed preventive maintenance and machine diagnostics[cite: 31, 32].</li>
-                            <li class="pb-4 border-b border-slate-100 italic text-slate-400">Installed new components to restore equipment functionality[cite: 30, 33].</li>
-                        </ul>
+                        <p class="font-bold text-lg">B.TECH, Mechanical Engineering [cite: 36]</p>
+                        <p class="text-sm opacity-60 italic">Adi Shankara Institute Of Engineering And Technology [cite: 36]</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-amber-100 px-3 py-1 rounded-full text-[10px] font-bold uppercase">BMW Engine Tuning [cite: 49]</span>
+                        <span class="bg-amber-100 px-3 py-1 rounded-full text-[10px] font-bold uppercase">EV Mfg [cite: 40]</span>
+                        <span class="bg-amber-100 px-3 py-1 rounded-full text-[10px] font-bold uppercase">Quality Mgmt [cite: 40]</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-border pt-12">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Competencies</div>
-                <div class="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
-                    <div class="space-y-4">
-                        <h4 class="font-bold border-b border-industrial pb-2">Technical [cite: 19, 22]</h4>
-                        <p class="text-sm">Engine Overhauls</p>
-                        <p class="text-sm">Propulsion Systems</p>
-                        <p class="text-sm">Fuel Injection [cite: 20]</p>
-                        <p class="text-sm">CAD Design [cite: 22]</p>
-                    </div>
-                    <div class="space-y-4">
-                        <h4 class="font-bold border-b border-industrial pb-2">Training [cite: 40, 49]</h4>
-                        <p class="text-sm">BMW Engine Tuning</p>
-                        <p class="text-sm">CNC Machining</p>
-                        <p class="text-sm">Quality Management</p>
-                        <p class="text-sm">EV Manufacturing</p>
-                    </div>
-                    <div class="space-y-4">
-                        <h4 class="font-bold border-b border-industrial pb-2">Linguistic [cite: 46]</h4>
-                        <p class="text-sm">English / Hindi</p>
-                        <p class="text-sm">Malayalam</p>
-                        <p class="text-sm">Telugu</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <footer class="flex justify-center gap-8 py-8 opacity-30 text-[10px] font-bold uppercase tracking-[0.3em]">
+            <span>English [cite: 46]</span>
+            <span>Hindi [cite: 46]</span>
+            <span>Malayalam [cite: 46]</span>
+            <span>Telugu [cite: 46]</span>
+        </footer>
 
-        <section class="section-border pt-12 bg-softamber -mx-6 px-6 py-20 rounded-[3rem]">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-xs font-bold uppercase tracking-[0.3em] text-amber-900">Academic Project [cite: 41]</div>
-                <div class="md:col-span-2">
-                    <h3 class="text-4xl font-serif mb-6 italic">Automated Solar Cleaning [cite: 42]</h3>
-                    <p class="text-lg leading-relaxed text-amber-950/80 mb-8">
-                        Eliminated water waste by using compressed air for automated solar panel maintenance[cite: 42, 44]. Designed the system to prevent surface scratches and maximize panel efficiency[cite: 43].
-                    </p>
-                    <p class="font-bold text-sm uppercase">B.Tech Mechanical Engineering [cite: 36]</p>
-                    <p class="text-sm text-amber-900">Adi Shankara Institute Of Engineering And Technology [cite: 36]</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="max-w-6xl mx-auto px-6 pb-12 flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.4em] opacity-40">
-        <span>Akshaj Biju &copy; 2026</span>
-        <span>Engineered for performance</span>
-    </footer>
+    </div>
 
 </body>
 </html>
