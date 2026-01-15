@@ -10,24 +10,24 @@
     
     <style>
         :root {
-            --bg-canvas: #F5F2ED; /* Subtle Industrial Beige */
-            --light-amber: #FEF9C3; /* Lightened Yellow Shade */
-            --marine-black: #1A1A1A;
+            --bg-canvas: #0A0A0A; /* Deep Black/Charcoal */
+            --light-amber: #FEF9C3; /* Preserved Light Yellow */
+            --marine-text: #E5E7EB; /* Light Grey Text for readability */
         }
         body { 
             background-color: var(--bg-canvas); 
             font-family: 'Outfit', sans-serif;
-            color: var(--marine-black);
+            color: var(--marine-text);
         }
         .technical-font { font-family: 'Space Grotesk', sans-serif; }
         .amber-block { 
             background-color: var(--light-amber); 
             border-radius: 16px;
-            border: 1px solid rgba(0,0,0,0.03);
+            color: #1A1A1A; /* Dark text inside light blocks */
         }
-        .dark-card {
-            background-color: #1A1A1A;
-            color: #FFFFFF;
+        .outline-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
         }
     </style>
@@ -41,23 +41,23 @@
                 <h1 class="technical-font text-5xl md:text-8xl font-bold tracking-tighter uppercase leading-none">
                     Akshaj Biju
                 </h1>
-                <p class="mt-6 text-lg font-bold tracking-[0.2em] uppercase opacity-60">
-                    Marine Service Engineer
+                <p class="mt-6 text-lg font-bold tracking-[0.2em] uppercase opacity-70">
+                    Marine Service Engineer [cite: 26]
                 </p>
                 <div class="mt-12 max-w-xl text-lg leading-relaxed">
-                    Motivated and enthusiastic Mechanical Marine Service Engineer[cite: 11]. Dedicated to delivering cost-efficient solutions that improve vessel performance and minimize downtime[cite: 18].
+                    Motivated Mechanical Marine Service Engineer[cite: 11, 13]. Dedicated to delivering cost-efficient solutions that improve vessel performance and minimize downtime[cite: 18].
                 </div>
             </div>
             
-            <div class="lg:col-span-4 dark-card p-10 flex flex-col justify-between">
+            <div class="lg:col-span-4 bg-zinc-900 text-white p-10 rounded-2xl flex flex-col justify-between border border-zinc-800">
                 <div class="space-y-6">
                     <div>
-                        <p class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2">Registry</p>
-                        <p class="text-sm font-medium">Passport: T6883497 </p>
-                        <p class="text-sm font-medium">DOB: 25/06/2001 </p>
+                        <p class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2">Registry [cite: 8]</p>
+                        <p class="text-sm font-medium">Passport: T6883497 [cite: 8]</p>
+                        <p class="text-sm font-medium">DOB: 25/06/2001 [cite: 8]</p>
                     </div>
                     <div>
-                        <p class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2">Direct Contact</p>
+                        <p class="text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2">Direct Contact [cite: 1, 5]</p>
                         <p class="text-sm font-medium">akshajbiju2001@gmail.com [cite: 5]</p>
                         <p class="text-sm font-medium">+91 9946441446 [cite: 1]</p>
                     </div>
@@ -71,37 +71,37 @@
         <main class="grid lg:grid-cols-12 gap-6">
             
             <div class="lg:col-span-4 space-y-6">
-                <div class="bg-white/50 border border-black/5 p-8 rounded-2xl">
-                    <h2 class="technical-font font-bold uppercase text-xs tracking-widest mb-6">Technical Skills [cite: 10]</h2>
-                    <ul class="space-y-4 text-sm font-semibold">
-                        <li><i class="fa-solid fa-check-double mr-2 text-yellow-600"></i> Engine Overhauls [cite: 19]</li>
-                        <li><i class="fa-solid fa-check-double mr-2 text-yellow-600"></i> Marine Generator Maintenance [cite: 19]</li>
-                        <li><i class="fa-solid fa-check-double mr-2 text-yellow-600"></i> Fuel Injection Systems [cite: 20]</li>
-                        <li><i class="fa-solid fa-check-double mr-2 text-yellow-600"></i> CPP & Shaft Lines [cite: 22]</li>
-                        <li><i class="fa-solid fa-check-double mr-2 text-yellow-600"></i> CAD & SolidWorks [cite: 22, 48]</li>
+                <div class="outline-card p-8">
+                    <h2 class="technical-font font-bold uppercase text-xs tracking-widest mb-6 text-yellow-200">Technical Skills [cite: 10]</h2>
+                    <ul class="space-y-4 text-sm font-medium opacity-90">
+                        <li><i class="fa-solid fa-check mr-2 text-yellow-200"></i> Engine Overhauls & Repairs [cite: 19]</li>
+                        <li><i class="fa-solid fa-check mr-2 text-yellow-200"></i> Marine Generator Maintenance [cite: 19]</li>
+                        <li><i class="fa-solid fa-check mr-2 text-yellow-200"></i> Fuel Injection Systems [cite: 20]</li>
+                        <li><i class="fa-solid fa-check mr-2 text-yellow-200"></i> Propulsion Systems (CPP) [cite: 22, 28]</li>
+                        <li><i class="fa-solid fa-check mr-2 text-yellow-200"></i> CAD & Solid Works [cite: 22, 48]</li>
                     </ul>
                 </div>
             </div>
 
             <div class="lg:col-span-8 amber-block p-10">
                 <div class="flex flex-col md:flex-row justify-between items-baseline border-b border-black/10 pb-6 mb-8">
-                    <h2 class="technical-font text-3xl font-bold uppercase italic">Service Log</h2>
-                    <p class="text-sm font-bold opacity-40">10/2023 — Present [cite: 24]</p>
+                    <h2 class="technical-font text-3xl font-bold uppercase italic">Service Log [cite: 23]</h2>
+                    <p class="text-sm font-bold opacity-50">10/2023 — Current [cite: 24]</p>
                 </div>
                 
                 <div class="space-y-10">
                     <div>
                         <h3 class="text-xl font-bold uppercase tracking-tight">Ind-Aust Maritime Pvt. Ltd. [cite: 25]</h3>
-                        <p class="text-xs font-bold text-yellow-700 mt-1 uppercase tracking-widest">Marine Service Engineer [cite: 26]</p>
+                        <p class="text-xs font-bold text-yellow-800 mt-1 uppercase tracking-widest">Marine Service Engineer [cite: 26]</p>
                         
                         <div class="mt-6 grid md:grid-cols-2 gap-8 text-sm leading-relaxed">
                             <ul class="space-y-4">
-                                <li>Overhauled Yanmar Auxiliary & Main Engines (6EY18LW, 6EY26LW).</li>
-                                <li>Serviced Controllable Pitch Propeller (CPP) Shafting on passenger/cargo vessels.</li>
+                                <li>Overhauled Yanmar Auxiliary & Main Engine (6EY18LW, 6EY26LW).</li>
+                                <li>Worked on Controllable Pitch Propeller (CPP) Shafting.</li>
                             </ul>
                             <ul class="space-y-4">
-                                <li>Performed visual inspections and preventive maintenance on machinery[cite: 31].</li>
-                                <li>Executed full equipment dismantling to replace defective parts and restore functionality[cite: 33].</li>
+                                <li>Visually inspected machinery and performed preventive maintenance[cite: 31].</li>
+                                <li>Dismantled equipment to replace defective components and restore functionality[cite: 33].</li>
                             </ul>
                         </div>
                     </div>
@@ -110,14 +110,15 @@
         </main>
 
         <section class="grid lg:grid-cols-2 gap-6">
-            <div class="bg-white/50 border border-black/5 p-10 rounded-2xl">
-                <h3 class="technical-font font-bold text-xs uppercase tracking-widest mb-6 opacity-40">Engineering Project [cite: 41]</h3>
-                <h4 class="text-2xl font-bold mb-4">Automated Solar Panel Cleaning System </h4>
-                <p class="text-sm leading-relaxed mb-6 opacity-70">
-                    Utilized compressed air to eliminate water-based cleaning, improving efficiency and preventing surface scratches on solar panels[cite: 42, 43].
+            <div class="outline-card p-10">
+                <h3 class="technical-font font-bold text-xs uppercase tracking-widest mb-6 opacity-50">Engineering Project [cite: 41]</h3>
+                <h4 class="text-2xl font-bold mb-4 text-yellow-100">Automated Solar Panel Cleaning System [cite: 42]</h4>
+                <p class="text-sm leading-relaxed mb-6 opacity-80">
+                    Developed a compressed air system to eliminate water-based cleaning, improving efficiency and preventing surface scratches[cite: 42, 43, 44].
                 </p>
-                <div class="pt-6 border-t border-black/5 flex justify-between items-center">
+                <div class="pt-6 border-t border-white/10 flex flex-col">
                     <p class="text-xs font-bold uppercase tracking-tighter">B.Tech Mechanical Engineering [cite: 36]</p>
+                    <p class="text-[10px] opacity-50 uppercase mt-1">Adi Shankara Institute Of Engineering And Technology [cite: 36]</p>
                 </div>
             </div>
 
@@ -125,13 +126,13 @@
                 <h3 class="technical-font font-bold text-xs uppercase tracking-widest mb-6">Credentials & Languages</h3>
                 <div class="grid grid-cols-2 gap-8">
                     <div class="space-y-2">
-                        <p class="text-[10px] font-bold opacity-40 uppercase">Certifications [cite: 39]</p>
+                        <p class="text-[10px] font-bold opacity-50 uppercase">Certifications [cite: 39]</p>
                         <p class="text-xs font-bold">EV Manufacturing [cite: 40]</p>
                         <p class="text-xs font-bold">Quality Management [cite: 40]</p>
                         <p class="text-xs font-bold">BMW Engine Tuning [cite: 49]</p>
                     </div>
                     <div class="space-y-2">
-                        <p class="text-[10px] font-bold opacity-40 uppercase">Languages [cite: 45]</p>
+                        <p class="text-[10px] font-bold opacity-50 uppercase">Languages [cite: 45]</p>
                         <p class="text-xs font-bold">English / Hindi [cite: 46]</p>
                         <p class="text-xs font-bold">Malayalam / Telugu [cite: 46]</p>
                     </div>
@@ -139,8 +140,8 @@
             </div>
         </section>
 
-        <footer class="pt-12 border-t border-black/5 flex justify-between text-[10px] font-bold opacity-30 uppercase tracking-[0.5em]">
-            <span>Registry: Ernakulam, Kerala [cite: 4]</span>
+        <footer class="pt-12 border-t border-white/10 flex justify-between text-[10px] font-bold opacity-30 uppercase tracking-[0.5em]">
+            <span>Vennikulam | Ernakulam [cite: 4]</span>
             <span>&copy; Akshaj Biju 2026</span>
         </footer>
 
