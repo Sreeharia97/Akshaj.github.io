@@ -31,11 +31,21 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
         }
-        .profile-image, .news-image {
+        .profile-image {
+            filter: grayscale(100%);
+            transition: all 0.4s ease;
+            /* Focus the crop higher up to bring the face down */
+            object-position: center 20%; 
+        }
+        .profile-image:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+        .news-image {
             filter: grayscale(100%);
             transition: all 0.4s ease;
         }
-        .profile-image:hover, .news-image:hover {
+        .news-image:hover {
             filter: grayscale(0%);
             transform: scale(1.03);
         }
