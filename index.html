@@ -32,21 +32,19 @@
             border-radius: 24px;
         }
         .profile-image {
-            filter: grayscale(100%);
+            /* Removed grayscale filter to keep original color */
             transition: all 0.4s ease;
-            /* Focus the crop higher up to bring the face down */
+            /* Focus the crop higher up to bring the face down into frame */
             object-position: center 20%; 
         }
         .profile-image:hover {
-            filter: grayscale(0%);
             transform: scale(1.05);
         }
         .news-image {
-            filter: grayscale(100%);
+            /* Removed grayscale filter to keep original color */
             transition: all 0.4s ease;
         }
         .news-image:hover {
-            filter: grayscale(0%);
             transform: scale(1.03);
         }
         .news-container {
