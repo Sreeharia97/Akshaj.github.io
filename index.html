@@ -31,13 +31,18 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
         }
-        .profile-image {
+        .profile-image, .news-image {
             filter: grayscale(100%);
             transition: all 0.4s ease;
         }
-        .profile-image:hover {
+        .profile-image:hover, .news-image:hover {
             filter: grayscale(0%);
-            transform: scale(1.05);
+            transform: scale(1.03);
+        }
+        .news-container {
+            border: 1px solid rgba(254, 249, 195, 0.2);
+            overflow: hidden;
+            border-radius: 16px;
         }
     </style>
 </head>
@@ -155,34 +160,38 @@
 
         <section class="grid lg:grid-cols-12 gap-6">
             <div class="lg:col-span-8 outline-card p-10">
-                <div class="flex justify-between items-start mb-8">
-                    <div>
-                        <h3 class="technical-font font-bold text-xs uppercase tracking-widest opacity-50 mb-2">Engineering R&D</h3>
-                        <h4 class="text-3xl font-bold text-yellow-100">Automated Solar Cleaning System</h4>
+                <div class="flex flex-col xl:flex-row gap-10">
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <h3 class="technical-font font-bold text-xs uppercase tracking-widest opacity-50 mb-2">Engineering R&D</h3>
+                                <h4 class="text-3xl font-bold text-yellow-100">Automated Solar Cleaning System</h4>
+                            </div>
+                        </div>
+                        
+                        <p class="text-base leading-relaxed mb-6 opacity-80">
+                            Conceptualized and developed a high-efficiency compressed air-based cleaning system for solar arrays. This innovation eliminates the need for water, preventing surface micro-abrasions and significantly reducing maintenance costs.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-newspaper text-yellow-100 mt-1"></i>
+                                <p class="text-xs opacity-70">Recognized by national press for sustainable engineering and water conservation innovation.</p>
+                            </div>
+                            <a href="https://www.youtube.com/YOUR_LINK_HERE" target="_blank" class="inline-flex items-center gap-3 bg-white/5 border border-white/10 hover:bg-white/10 text-white px-6 py-3 rounded-xl transition-all group">
+                                <i class="fa-brands fa-youtube text-red-500 text-lg"></i>
+                                <span class="text-xs font-bold uppercase tracking-widest">Watch Project Demo</span>
+                            </a>
+                        </div>
                     </div>
-                    <span class="bg-yellow-100/10 text-yellow-100 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Featured Project</span>
-                </div>
-                
-                <p class="text-base leading-relaxed mb-6 opacity-80">
-                    Conceptualized and developed a high-efficiency compressed air-based cleaning system for solar arrays. This innovation eliminates the need for water, preventing surface micro-abrasions and significantly reducing maintenance costs.
-                </p>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div class="flex items-start gap-3">
-                        <i class="fa-solid fa-newspaper text-yellow-100 mt-1"></i>
-                        <p class="text-xs opacity-70">Nationally recognized and published in leading newspapers for sustainable engineering innovation.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <i class="fa-solid fa-microchip text-yellow-100 mt-1"></i>
-                        <p class="text-xs opacity-70">Focuses on automated debris removal and diagnostic optimization for industrial energy grids.</p>
-                    </div>
-                </div>
 
-                <a href="https://www.youtube.com/YOUR_VIDEO_LINK" target="_blank" class="inline-flex items-center gap-3 bg-white/5 border border-white/10 hover:bg-white/10 text-white px-6 py-3 rounded-xl transition-all group">
-                    <i class="fa-brands fa-youtube text-red-500 text-lg"></i>
-                    <span class="text-xs font-bold uppercase tracking-widest">Watch Project Demo</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                </a>
+                    <div class="xl:w-72">
+                        <p class="text-[10px] font-bold uppercase tracking-widest opacity-30 mb-3 text-center xl:text-left">Press Clipping</p>
+                        <div class="news-container">
+                            <img src="newspaper-cutting.jpg" alt="Newspaper Coverage" class="news-image w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="lg:col-span-4 space-y-6">
@@ -204,7 +213,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="mt-8 text-[10px] font-bold uppercase opacity-30 tracking-[0.4em]">
                         Ernakulam, Kerala
                     </div>
@@ -226,7 +234,6 @@
                     </a>
                 </div>
             </div>
-            
             <div class="mt-12 text-center">
                 <p class="text-[8px] uppercase tracking-[0.6em] opacity-20 font-bold">
                     Partner with the consultant to architect a strategic digital presence that compounds your professional authority
